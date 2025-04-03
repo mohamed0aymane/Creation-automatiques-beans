@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="p01" class="org.mql.java.models.Product">
+		<property name="id" value="101"/>
+		<property name="name" value="laptop"/>
+		<property name="price" value="1000"/>
+	</bean>
+	<bean name="p02" class="org.mql.java.models.Product">
+		<property name="id" value="102"/>
+		<property name="name" value="telephone"/>
+		<property name="price" value="1000"/>
+	</bean>
+	<bean name="p03" class="org.mql.java.models.Product">
+		<property name="id" value="103"/>
+		<property name="name" value="tablette"/>
+		<property name="price" value="1000"/>
+	</bean>
+	<bean name="c01" class="org.mql.java.models.Customer">
+		<property name="id" value="101"/>
+		<property name="name" value="aymane"/>
+		<property name="tel" value="0705798525"/>
+		<property name="email" value="aymane@gmail.com"/>
+	</bean>
+	<bean name="c02" class="org.mql.java.models.Customer">
+		<property name="id" value="102"/>
+		<property name="name" value="wissal"/>
+		<property name="tel" value="0705798525"/>
+		<property name="email" value="wissal@gmail.com"/>
+	</bean>
+	<bean name="c03" class="org.mql.java.models.Customer">
+		<property name="id" value="103"/>
+		<property name="name" value="fatiha"/>
+		<property name="tel" value="0705798525"/>
+		<property name="email" value="fatiha@gmail.com"/>
+	</bean>
+	
+</beans>
