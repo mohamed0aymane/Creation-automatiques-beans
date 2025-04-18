@@ -23,7 +23,7 @@ public class AnnotationContextLoader extends Thread {
 		for(Class<?> target:targets) {
 			if(target.isAnnotationPresent(Bean.class)) {
 				Bean beanAnnotation=target.getAnnotation(Bean.class);
-				//nombre d'instance a creer (valeur de l'annotation
+				//nombre d'instance a creer (valeur de l'annotation)
 				int count=beanAnnotation.value();
 				//creer le nombre demande d'instances
 				for(int i=1;i<=count;i++) {
@@ -50,8 +50,7 @@ public class AnnotationContextLoader extends Thread {
 							else if(field.isAnnotationPresent(StringValue.class)) {
 								StringValue annotation=field.getAnnotation(StringValue.class);
 								//generer un entier aleatoire entre min et max
-								
-								String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+								String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789";
 							    StringBuilder sb = new StringBuilder();
 							    for(int j = 0; j < annotation.size(); j++) {
 							        sb.append(chars.charAt((int)(Math.random() * chars.length())));

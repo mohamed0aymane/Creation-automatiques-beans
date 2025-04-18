@@ -58,8 +58,8 @@ class AnnotationConfigApplicationContextTest {
         System.out.println("\nDétails des clients:");
         context.getBeans(Customer.class).forEach(c -> {
             Customer cust = (Customer) c;
-            System.out.printf("Client [id=%d, nom=%s]%n", 
-                cust.getId(), cust.getName());
+            System.out.printf("Client [id=%d, name=%s,tel=%s,email=%s]%n", 
+                cust.getId(), cust.getName(),cust.getTel(),cust.getEmail());
         });
     }
 }

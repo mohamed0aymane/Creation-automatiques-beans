@@ -1,9 +1,6 @@
 package org.mql.java.xml;
 
-import java.util.List;
-
 import org.mql.java.annotations.Data;
-import org.mql.java.models.Product;
 import org.mql.java.services.AbstractApplicationContext;
 
 @Data(source="resources/beans.xml")

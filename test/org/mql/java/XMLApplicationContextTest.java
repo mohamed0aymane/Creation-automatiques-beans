@@ -21,6 +21,10 @@ class XMLApplicationContextTest {
 		assertNotNull(context.getBean("p01", Product.class));
 	}
 	@Test
+	void testBeanNotLoading() {
+		assertNull(context.getBean("p06", Product.class));
+	}
+	@Test
 	public void testBeanInstance() {
 	    Product product1 = (Product) context.getBean("p01", Product.class);
 	    Product product2 = (Product) context.getBean("p02", Product.class);
