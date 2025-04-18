@@ -13,7 +13,7 @@
 	<bean name="p03" class="org.mql.java.models.Product">
 		<property name="id" value="103"/>
 		<property name="name" value="tablette"/>
-		<property name="price" value="1000"/>
+		<property name="price" value="1500"/>
 	</bean>
 	<bean name="c01" class="org.mql.java.models.Customer">
 		<property name="id" value="101"/>

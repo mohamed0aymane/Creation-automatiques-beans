@@ -14,6 +14,8 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
 	public <T> List<T> getBeans(Class<T> cls) {
 		List<T> result=new Vector<>();
 		for(Object bean:beans.values()) {
+			//cls.isInstance(bean) : ça vérifie si l'objet bean est 
+			//une instance de la classe cls ou d'une de ses sous-classes.
 			if( bean != null && cls.isInstance(bean)){
 				result.add(cls.cast(bean));
 			}

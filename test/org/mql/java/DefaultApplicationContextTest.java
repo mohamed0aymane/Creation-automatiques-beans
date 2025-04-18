@@ -42,6 +42,7 @@ class DefaultApplicationContextTest {
 	void getCustomer() {
 		Customer customer4=new Customer(1, "aymane", "0705797152", "aymane@gmail.com");
 		context.addBean("customer 4", customer4);
+		//Elle vérifie que la valeur passée n’est pas null. Si elle est null, le test échoue .
 		assertNotNull(context.getBean("customer 4",Customer.class));
 	}
 	@Test
